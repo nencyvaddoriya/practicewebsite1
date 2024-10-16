@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/00c9f65103384885c5b7d94551384e42?family=ElectraLTStd-Regular" rel="stylesheet" type="text/css"/>
+    <title>Jewellery Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    
+    <link rel="stylesheet" href="website.css">
+    
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="header">
+            <div class="header_container">
+                <div class="wrapper">
+                    <nav class="navlist">
+                        <ul class="inside"> 
+                            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                            <div class="mobile-items" id="mobileItem">
+                                
+                                    <li class="subcat">
+                                        <a href="javascript:void(0);" onclick="toggleDropdown('mobileDropdownCollections')">Shop by Collections 
+                                            <img class="dropdown-arrow" src="asset/arrowdown.png" alt="">
+                                        </a>
+                                    </li>
+
+                                    <div class="mobile-dropdown-menu" id="mobileDropdownCollections">
+                                        <ul class="listitemm">
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Rings</a></li>
+                                            <li><a href="">Chains</a></li>
+                                            <li><a href="">Bracelets</a></li>
+                                            <li><a href="">Necklaces</a></li>
+                                            <li><a href="">Earrings</a></li>
+                                        </ul>
+                                    </div>
+                                    <li class="subcat">
+                                        <a href="javascript:void(0);" onclick="toggleDropdown('mobileDropdownCategories')">Shop by Category
+                                            <img class="dropdown-arrow" src="asset/arrowdown.png" alt="">
+                                        </a>
+                                    </li>
+                                    <div class="mobile-dropdown-menu" id="mobileDropdownCategories">
+                                        <ul class="category">
+                                            <li><a href="">Category 1</a></li>
+                                            <li><a href="">Category 2</a></li>
+                                            <li><a href="">Category 3</a></li>
+                                        </ul>
+                                    </div>
+                                    <li>
+                                        <a href="">Bestsellers</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Men's Jewellery</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Store Location</a>
+                                    </li> 
+                                  
+                            </div>
+                            <button class="cancel-button" id="cancelButton" onclick="toggleMenu()" >✖</button> 
+                            <li class="logo">
+                                <img src="asset/logo.png" alt="">
+                            </li> 
+                            <li class="items">
+                                <ul>
+                                    <li class="subcat">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Shop by Collections
+                                            <img class="dropdown-arrow" src="asset/arrowdown.png" alt="">
+                                        </a>
+                                        
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="">All</a></li>
+                                                <li><a href="">Rings</a></li>
+                                                <li><a href="">Chains</a></li>
+                                                <li><a href="">Chains</a></li>
+                                                <li><a href="">Bracelets</a></li>
+                                                <li><a href="">Necklaces</a></li>
+                                                <li><a href="">Earrings</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcat">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Shop by Category
+                                            <img class="dropdown-arrow" src="asset/arrowdown.png" alt="">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="">Category 1</a></li>
+                                                <li><a href="">Category 2</a></li>
+                                                <li><a href="">Category 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    <li>
+                                        <a href="">Bestsellers</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Men's Jewellery</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Store Location</a>
+                                    </li> 
+                                </ul> 
+                            </li>
+                            <li class="navright">
+                                <ul>
+                                    <li>
+                                        <a href="" target="search" class="search_link"></a>
+                                    </li>
+                                    <li> 
+                                        <a href="" target="person" class="person_link"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="cart" class="cart_link"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                          
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="banner_slider">
+        <div class="banner_slider_container">
+            <button class="arrow left-arrow">
+                <img src="asset/arrow_back_ios_new.png" alt="Previous">
+            </button>
+            <div class="banner_slider_inner">
+                <ul class="banner_slider_items">
+                    <li class="banner_slider_item">
+                        <div class="banner_images">
+                            <img src="asset/earring.png" alt="">
+                        </div>
+                        <div class="banner_details">
+                            <div class="banner_details_container">
+                                <div class="banner_details_inner">
+                                    <p class="line1">Jewellery</p>
+                                    <p class="line2">EARRING</p>
+                                    <p class="line3">COLLECTION</p>
+                                    <div class="shopdiv">
+                                        <a href="" target="shop now" class="shop">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="banner_slider_item">
+                        <div class="banner_images">
+                            <img src="asset/nacklace.png" alt="">
+                        </div>
+                        <div class="banner_details">
+                            <div class="banner_details_container">
+                                <div class="banner_details_inner">
+                                    <p class="line1">Jewellery</p>
+                                    <p class="line2">Necklace</p>
+                                    <p class="line3">COLLECTION</p>
+                                    <div class="shopdiv">
+                                        <a href="" target="shop now" class="shop">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="banner_slider_item">
+                        <div class="banner_images">
+                            <img src="asset/rings.png" alt="">
+                        </div>
+                        <div class="banner_details">
+                            <div class="banner_details_container">
+                                <div class="banner_details_inner">
+                                    <p class="line1">Jewellery</p>
+                                    <p class="line2">Rings</p>
+                                    <p class="line3">COLLECTION</p>
+                                    <div class="shopdiv">
+                                        <a href="" target="shop now" class="shop">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="arrow right-arrow">
+                <img src="asset/arrow_back_ios_new.png" alt="Next">
+            </button>
+        </div>
+    </div>
+
+        <div class="bottomcontainer">
+            <div class="bottom">
+                <ul >
+                    <li class="content-one">
+                        <img src="asset/car.png" alt=""> Free shipping
+                    </li>
+                    <li class="content-two">
+                        <img src="asset/heart.png" alt=""> 92.5 Sterling silver
+                    </li>
+                    <li class="content-three">
+                        <img src="asset/box.png" alt="">Handcrafted 
+                    </li>
+                </ul>
+            </div>
+        </div>    
+
+        
+        <div class="heading">
+            <ul>
+                <li><h1>Necklaces</h1></li>
+            </ul>
+        </div>  
+        
+        
+        <div class="productlistone"> 
+        
+            <ul class="slider-container-p1">
+                <li class="leftarrow">
+                
+                            <img id="left" src="asset/arrow_back.png" alt="">
+
+                </li>                            
+
+
+                <ul class="slideitemtwo">
+                    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-one.png" alt="img" draggable="false">
+                            <h4>Hobo Small</h4> 
+                            <p>RS. 3,499.00</p> 
+                            <div class="color-options">
+                                <div class="color-option" data-color="c_one">
+                                    <img src="asset/c_one.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                                <div class="color-option" data-color="c_two">
+                                    <img src="asset/c_two.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>           
+                        </li>
+    
+                        <li>
+                            <div class="salemain">
+                                <img class="wiggle" src="asset/nproduct-two.png" alt="img" draggable="false">
+                                <img class="sale" src="asset/sale.png" alt="">
+                            </div>
+             
+                            <h4>Storml</h4>
+                            <p><s class="ss" > RS. 3,999.00</s> RS. 3,499.00</p>
+                            
+                        </li>
+    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-three.png" alt="img" draggable="false">
+                            <h4>Bo Soft Strap</h4>
+                            <p>RS. 3,499.00</p>
+                            <div class="color-options">
+                                <div class="color-option" data-color="c_one">
+                                    <img src="asset/c_one.png" alt="" class="color-dot" >
+                                    <span class="indicator"></span>
+                                </div>
+                                <div class="color-option" data-color="c_two">
+                                    <img src="asset/c_two.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>       
+                        </li>
+    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-four.png" alt="img" draggable="false">
+                            <h4>Hobo Large</h4>
+                            <p>RS. 3,499.00</p>
+                        </li>
+                   
+                   
+                    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-one.png" alt="img" draggable="false">
+                            <h4>Hobo Small</h4> 
+                            <p>RS. 3,499.00</p>  
+                            <div class="color-options">
+                                <div class="color-option" data-color="c_one">
+                                    <img src="asset/c_one.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                                <div class="color-option" data-color="c_two">
+                                    <img src="asset/c_two.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>                            
+                        </li>
+    
+                        <li>
+                            <div class="salemain">
+                                <img class="wiggle" src="asset/nproduct-two.png" alt="img" draggable="false">
+                                <img class="sale" src="asset/sale.png" alt="">
+                            </div>
+                            <h4>Storml</h4>
+                            <p><s class="ss">RS. 3,999.00</s>RS. 3,499.00</p>
+                        </li>
+    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-three.png" alt="img" draggable="false">
+                            <h4>Bo Soft Strap</h4>
+                            <p>RS. 3,499.00</p>
+                            <div class="color-options">
+                                <div class="color-option" data-color="c_one">
+                                    <img src="asset/c_one.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                                <div class="color-option" data-color="c_two">
+                                    <img src="asset/c_two.png" alt="" class="color-dot">
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>       
+                        </li>
+    
+                        <li>
+                            <img class="wiggle" src="asset/nproduct-four.png" alt="img" draggable="false">
+                            <h4>Hobo Large</h4>
+                            <p>RS. 3,499.00</p>
+                        </li>
+    
+                   
+
+                    
+
+                </ul>    
+
+
+
+                <li class="rightarrow"> 
+                    
+                            <img id="right" src="asset/arrow_back.png" alt="">
+                      
+                </li>    
+            
+              
+            </ul>
+            <div class="radio-buttons-container">
+                <input type="radio" id="view1" name="slide1" value="1" checked>
+                <span class="custom-radio"></span>
+            
+                <input type="radio" id="view2" name="slide1" value="2" >
+                <span class="custom-radio"></span>
+            </div>
+        </div>
+        
+    
+
+    <div class="product">
+        <ul class="productmain">
+            <li class="proone">
+                <a href=""><img src="asset/p-one.png" alt=""></a>
+                <div class="producttext"><p>Chain Bracelets</p></div>
+                <p>6 Products</p>
+            </li>
+            
+            <li class="protwo">
+                <a href=""><img src="asset/p-two.png" alt=""></a>
+                <div class="producttext"><p>Earrings</p></div>
+                <p>9 Products</p>
+            </li>
+
+            <li class="prothree">
+                <a href=""><img src="asset/p-three.png " alt=""></a>
+                <div class="producttext"><p>Necklaces</p></div>
+                <p>7 Products</p>
+            </li>
+        </ul>
+
+    </div>
+
+      
+    <div class="heading">
+        <ul>
+            <li><h1>Earrings</h1></li>
+        </ul>
+    </div> 
+
+    <div class="productlisttwo"> 
+        <ul class="slider-container-p2">
+            <li class="leftarrow-two">
+               
+                        <img id="left-one" src="asset/arrow_back.png" alt="">
+                
+            </li>                            
+
+
+            <ul class="slideitemthree">
+               
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-one.png" alt="img" draggable="false">
+                        <h4>Hobo Small</h4> 
+                        <p>RS. 3,499.00</p>                                             
+                    </li>
+
+                    <li>
+                        <div class="salemain">
+                            <img class="wiggle" src="asset/eproduct-two.png" alt="img" draggable="false">
+                            <img class="sale" src="asset/sale.png" alt="">
+                        </div>
+            
+                        <h4>Storml</h4>
+                        <p><s style="color: #FF5151;margin-right: 10px;">RS. 3,999.00</s>RS. 3,499.00</p>
+                        
+                    </li>
+
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-three.png" alt="img" draggable="false">
+                        <h4>Bo Soft Strah</p>
+                        <p>RS. 3,499.00</p>
+                    </li>
+
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-four.png" alt="img" draggable="false">
+                        <h4>Hobo Large</h4>
+                        <p>RS. 3,499.00</p>
+                    </li>
+                
+                
+               
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-one.png" alt="img" draggable="false">
+                        <h4>Hobo Small</h4> 
+                        <p>RS. 3,499.00</p>                             
+                    </li>
+
+                    <li>
+                        <div  class="salemain">
+                            <img class="wiggle" src="asset/eproduct-two.png" alt="img" draggable="false">
+                            <img class="sale" src="asset/sale.png" alt="">
+                        </div>
+            
+                        <h4>Storml</h4>
+                        <p><s style="color: #FF5151; margin-right: 10px;">RS. 3,999.00</s>RS. 3,499.00</p>
+                        
+                    </li>
+
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-three.png" alt="img" draggable="false">
+                        <h4>Bo Soft Strap</h4>
+                        <p>RS. 3,499.00</p>    
+                    </li>
+
+                    <li>
+                        <img class="wiggle" src="asset/eproduct-four.png" alt="img" draggable="false">
+                        <h4>Hobo Large</h4>
+                        <p>RS. 3,499.00</p>
+                    </li>
+               
+
+                
+
+            </ul>    
+
+
+
+            <li class="rightarrow-two"> 
+               
+                        <img id="right-one" src="asset/arrow_back.png" alt="">
+                    
+            </li>    
+        
+            
+        </ul>
+        <div class="radio-buttons-container-two">
+            <input type="radio" id="viewone" name="slide2" value="1" checked>
+            <span class="custom-radio-two"></span>
+        
+            <input type="radio" id="viewtwo" name="slide2" value="2" >
+            <span class="custom-radio-two"></span>
+        </div>
+    </div>
+
+    <div class="element">
+        <div class="elementimg">
+            <div class="eletext">
+                <p class="p-one">THE NEW</p>
+                <p class="p-two">The unique make that fits your style</p>
+                <p class="p-three">Always look for in a world-class diamond!</p>
+                <div class="elebutton"><a href="" target="EXPLORE NOW" class="buttonone">EXPLORE NOW</a></div>    
+            </div>
+
+        </div> 
+        <img src="asset/elementor.png" alt="">   
+    </div>
+
+
+    <div class="headingtwo">
+        <h1>The Perfect Pairing</h1>
+        <p>Pair up our statement pieces to create a unique look</p>
+    </div>
+    
+    <div class="pairing">
+        <ul class="pairingg">
+            <li>
+                <span class="row"><img class="pimag" src="asset/pair-one.png" alt=""></span>
+                <a class="asmall" href="">Necklaces <img src="asset/arrow_right.png" alt=""></a>
+            </li>
+
+            <li>
+                <ul class="colum">
+                    <li >
+                        <span  class="columphoto"><img class="pimg" src="asset/pair-two.png" alt=""></span>
+                        <a class="asmall" href="">Rings<img src="asset/arrow_right.png" alt=""></a>
+                    </li>
+
+                    <li>
+                        <span  class="columphoto"><img class="pimg" src="asset/pair-three.png" alt=""></span>
+                        <a class="asmall" href="">Bracelets<img src="asset/arrow_right.png" alt=""></a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+
+    <div class="ring">
+        <img src="asset/ring.png" alt="">
+    </div>
+
+    <div class="headingthree">
+        <h1>Product Of the Month</h1>
+    </div> 
+    <div class="slider-wrapper">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="p-of-month">
+                <ul class="ppp">
+                 
+                    <span class="photoo"><img src="asset/pmonth.png" alt="Product 1 Image"></span>
+                    
+                    <ul class="p-of-monthsub">
+                        <li>
+                            <h1>Rose ForHER1 Sterling Silver Pendant Chain</h1>
+                            <h3>RS. 8,999.00</h3>
+                            <p>Whimsical jewellery that will look extra adorable when you wear it...</p>
+                            <h2>Quantity</h2>
+                            <ul class="quntity">
+                                <li class="minus"><img src="asset/minus.png" alt="Decrease Quantity"></li>
+                                <li class="number">1</li>
+                                <li class="plus"><img src="asset/plus.png" alt="Increase Quantity"></li>
+                            </ul>
+                            <div class="buttontwo">
+                                <button class="adi">Add to cart</button>
+                                <button class="bin">Buy it now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="p-of-month">
+                <ul class="ppp">
+                
+                    <span class="photoo"> <img src="asset/pmonth.png" alt="Product 1 Image"></span>
+                    
+                    <ul class="p-of-monthsub">
+                        <li>
+                            <h1>Rose ForHER2 Sterling Silver Pendant Chain</h1>
+                            <h3>RS. 9,999.00</h3>
+                            <p>This design is so cute and easy to wear, you will never want to take it off. ...</p>
+                            <h2>Quantity</h2>
+                            <ul class="quntity">
+                                <li class="minus"><img src="asset/minus.png" alt="Decrease Quantity"></li>
+                                <li class="number">1</li>
+                                <li class="plus"><img src="asset/plus.png" alt="Increase Quantity"></li>
+                            </ul>
+                            <div class="buttontwo">
+                                <button class="adi">Add to cart</button>
+                                <button class="bin">Buy it now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+    
+
+                <!-- Slide 3 -->
+            <div class="p-of-month">
+                <ul class="ppp">
+                    
+                    <span class="photoo"><img src="asset/pmonth.png" alt="Product 1 Image"></span>
+                    
+                    <ul class="p-of-monthsub">
+                        <li>
+                            <h1>Rose ForHER3 Sterling Silver Pendant Chain</h1>
+                            <h3>RS. 5,999.00</h3>
+                            <p>Light weightand super easy to carry that will amp up the style quotient outfit. ..</p>
+                            <h2>Quantity</h2>
+                            <ul class="quntity">
+                                <li class="minus"><img src="asset/minus.png" alt="Decrease Quantity"></li>
+                                <li class="number">1</li>
+                                <li class="plus"><img src="asset/plus.png" alt="Increase Quantity"></li>
+                            </ul>
+                            <div class="buttontwo">
+                                <button class="adi">Add to cart</button>
+                                <button class="bin">Buy it now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="p-of-month">
+                <ul class="ppp">
+                    
+                    <span class="photoo"><img src="asset/pmonth.png" alt="Product 1 Image"></span>
+                    
+                    <ul class="p-of-monthsub">
+                        <li>
+                            <h1>Rose ForHER4 Sterling Silver Pendant Chain</h1>
+                            <h3>RS. 7,999.00</h3>
+                            <p>And a perfect gift for your loved one....</p>
+                            <h2>Quantity</h2>
+                            <ul class="quntity">
+                                <li class="minus"><img src="asset/minus.png" alt="Decrease Quantity"></li>
+                                <li class="number">1</li>
+                                <li class="plus"><img src="asset/plus.png" alt="Increase Quantity"></li>
+                            </ul>
+                            <div class="buttontwo">
+                                <button class="adi">Add to cart</button>
+                                <button class="bin">Buy it now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Radio Buttons for Navigation -->
+    <div class="radio-buttons">
+        <input type="radio" name="slider" id="slide0" checked>
+        <label for="slide0"></label>
+        
+        <input type="radio" name="slider" id="slide1">
+        <label for="slide1"></label>
+        
+        <input type="radio" name="slider" id="slide2">
+        <label for="slide2"></label>
+        
+        <input type="radio" name="slider" id="slide3">
+        <label for="slide3"></label>
+    </div>
+
+
+
+
+    <div class="productlistthree"> 
+        <ul class="slider-container-p3">
+            <li class="leftarrow-three">
+               
+                        <img id="left-three" src="asset/arrow_back.png" alt="">
+                
+            </li>                            
+    
+            <ul class="slideitemfour">
+                
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-one.png" alt="img" draggable="false">
+                        <h4>Hobo Small</h4> 
+                        <p>RS. 3,499.00</p>                         
+                    </li>
+    
+                    <li>
+                        <div class="salemain">
+                            <img class="wiggle" src="asset/rproduct-two.png" alt="img" draggable="false">
+                            <img class="sale" src="asset/sale.png" alt="">
+                        </div>
+                        
+                        <h4>Storml</h4>
+                        <p><s style="color: #FF5151; margin-right: 10px;">RS. 3,999.00</s>RS. 3,499.00</p>
+                    </li>
+    
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-three.png" alt="img" draggable="false">
+                        <h4>Bo Soft Strap</h4>
+                        <p>RS. 3,499.00</p>      
+                    </li>
+    
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-four.png" alt="img" draggable="false">
+                        <h4>Hobo Large</h4>
+                        <p>RS. 3,499.00</p>
+                    </li>
+                
+
+
+                
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-one.png" alt="img" draggable="false">
+                        <h4>Hobo Small</h4> 
+                        <p>RS. 3,499.00</p>                   
+                    </li>
+    
+                    <li>
+                        <div class="salemain">
+                            <img class="wiggle" src="asset/rproduct-two.png" alt="img" draggable="false">
+                            <img class="sale" src="asset/sale.png" alt="">
+                        </div>
+                        
+                        <h4>Storml</h4>
+                        <p><s style="color: #FF5151; margin-right: 10px;">RS. 3,999.00</s>RS. 3,499.00</p>
+                    </li>
+    
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-three.png" alt="img" draggable="false">
+                        <h4>Bo Soft Strap</h4>
+                        <p>RS. 3,499.00</p>
+    
+                    </li>
+    
+                    <li>
+                        <img class="wiggle" src="asset/rproduct-four.png" alt="img" draggable="false">
+                        <h4>Hobo Large</h4>
+                        <p>RS. 3,499.00</p>
+                    </li>
+                
+
+            </ul>
+    
+            <li class="rightarrow-three"> 
+               
+                        <img id="right-three" src="asset/arrow_back.png" alt="">
+                  
+            </li>    
+        </ul>
+    
+        <div class="radio-buttons-container-three">
+            <input type="radio" id="viewthreeone" name="slide3" value="1" checked>
+            <span class="custom-radio-three"></span>
+        
+            <input type="radio" id="viewthreetwo" name="slide3" value="2">
+            <span class="custom-radio-three"></span>
+        </div>
+    </div>
+
+
+    <div class="maintestimonials">
+        <h1>Testimonials</h1>
+        <div class="Testimonials">
+            <div class="info">
+                <div class="arrow_backk">
+                    <img src="asset/arrow_back.png" alt="Back">
+                </div>
+
+                <div class="testimonial-container slider">
+                    <div class="infos">
+                        <div class="stars">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star-no.png" alt="">
+                        </div>
+                        <div class="information">
+                            Making customer believe what they are investing on is the biggest concern nowadays, and we purchase pretty often from Forher store,
+                            cause they make sure that their customers get the best of it. I recommend everyone out there to check their collection once, we did like
+                            that and I am pretty much sure you guys would like that too, ForHer awaiting for much such collections.
+
+                        </div>
+                        <div class="name">Jitesh Gulgulia</div>
+                    </div>
+                    
+                    <div class="infos">
+                        <div class="stars">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                        </div>
+                        <div class="information">
+                            "I was hesitant to order online, but after hearing so many positive reviews, I decided to give it a try. I’m so glad I did! The selection is fantastic, and my order arrived faster than I expected. Each item was beautifully packaged, and the quality was exactly as described. I will definitely be coming back for more, and I've already recommended this store to my friends!"
+                        </div>
+                        <div class="name">Swati Desai</div>
+                    </div>
+                    
+                    <div class="infos">
+                        <div class="stars">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star-no.png" alt="">
+                            <img src="asset/star-no.png" alt="">
+                        </div>
+                        <div class="information">
+                            "I've been shopping at this store for over a year now, and I can confidently say that the quality of their products is unmatched. Every time I receive a package, I'm thrilled with the quality and craftsmanship. Their customer service is also exceptional; they really care about their customers and go the extra mile to ensure satisfaction. Highly recommend to anyone looking for reliable products!"
+                        </div>
+                        <div class="name">Nitin Shah</div>
+                    </div>
+                    
+                    <div class="infos">
+                        <div class="stars">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star.png" alt="">
+                            <img src="asset/star-no.png" alt="">
+                        </div>
+                        <div class="information">
+                            "What an amazing shopping experience! I stumbled upon this store while searching for unique gifts, and I was pleasantly surprised by their collection. Each item tells a story and has a unique charm. My order arrived on time, beautifully packaged, and the quality was top-notch. I can’t wait to explore more of their offerings and share my finds with family and friends!"
+                        </div>
+                        <div class="name">Kavita Bhatt</div>
+                    </div>
+                </div>
+
+                <div class="arrow_next">
+                    <img src="asset/arrow_back.png" alt="Next">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footermain">
+            <div class="footsubone" >
+                <h2>About Us</h2>
+                <p>Silversea is one-stop solution for all your dainty silver jewellery needs.Our mission is to provide trendy and everyday wear minimal silverjewellery from all over the globe to our customers at pocket friendlyprices. Forher carefully curates its designs from all over the world togive its customers a feeling of newness. The brand was established in 2017 and is caving its path to success since then.</p>
+                <div class="iflogo">   
+                    <a href=""><img src="asset/facebook.png" alt=""></a>
+                    <a href=""><img src="asset/insta.png" alt=""></a>
+                </div>    
+            </div>
+
+            <div class="footsubtwo">
+                <nav>
+                    <ul class="quick">
+                        <li>
+                            <h1 class="toggle" aria-expanded="false">Quick links <div class="footarrow"><img src="asset/arrow_back_ios_new.png" alt=""></div> </h1>
+                            <ul class="dropdown">
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Shipping & Delivery</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="collections">
+                        <li>
+                            <h1 class="toggle">Collections <div class="footarrow"><img src="asset/arrow_back_ios_new.png" alt=""></div></h1>
+                            <ul class="dropdown">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Rings</a></li>
+                                <li><a href="#">Chains</a></li>
+                                <li><a href="#">Bracelets</a></li>
+                                <li><a href="#">Necklaces</a></li>
+                                <li><a href="#">Earrings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="newsletter">
+                    <h1>Newsletter</h1>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <input class="email" type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h1>Copyright © 2024 Silversea</h1>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="website.js"></script>
+</body>
+</html>
