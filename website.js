@@ -417,3 +417,27 @@ $(document).ready(function() {
     });
 });
 
+
+$(document).ready(function() {
+    // Handle quantity increment
+    $('.plus').on('click', function() {
+        var $quantity = $(this).siblings('.number');  // Get the quantity number element
+        var currentVal = parseInt($quantity.text());  // Get the current quantity value
+        
+        // Increment the quantity if it's a valid number
+        if (!isNaN(currentVal)) {
+            $quantity.text(currentVal + 1);
+        }
+    });
+
+    // Handle quantity decrement
+    $('.minus').on('click', function() {
+        var $quantity = $(this).siblings('.number');  // Get the quantity number element
+        var currentVal = parseInt($quantity.text());  // Get the current quantity value
+
+        // Decrement the quantity if it's a valid number and greater than 1
+        if (!isNaN(currentVal) && currentVal > 1) {
+            $quantity.text(currentVal - 1);
+        }
+    });
+});
